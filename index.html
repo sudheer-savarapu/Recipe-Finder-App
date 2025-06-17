@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Finder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Recipe Finder</h1>
+        <p>Discover delicious recipes by ingredient or dish name</p>
+      </header>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for ingredient or recipe – e.g., 'chicken', 'pasta carbonara'"
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div id="loader" class="spinner hidden"></div>
+      <main id="content"></main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

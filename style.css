@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fcf7ef;
+  color: #333;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #2c2c2c;
+}
+header p {
+  margin: 5px 0 20px;
+  color: #555;
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.search-bar button {
+  padding: 12px 20px;
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.meal-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.meal-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.meal-card:hover {
+  transform: translateY(-4px);
+}
+.meal-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.meal-info {
+  padding: 15px;
+}
+.meal-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  font-size: 12px;
+  background: #eef;
+  border-radius: 12px;
+  padding: 4px 10px;
+  color: #555;
+}
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #ff7f50;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 40px auto;
+  animation: spin 1s linear infinite;
+}
+.hidden {
+  display: none;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.detail-view {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.detail-view img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.detail-tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.detail-tags .tag {
+  background: #def;
+  color: #333;
+}
+.ingredients,
+.instructions {
+  margin: 20px 0;
+}
+.ingredients h4,
+.instructions h4 {
+  margin-bottom: 10px;
+}
+.ingredients ul,
+.instructions ol {
+  padding-left: 20px;
+}
+.back-button {
+  margin-bottom: 20px;
+  color: #ff7f50;
+  cursor: pointer;
+  display: inline-block;
+}
+.recipeImg {
+  width: 200px;
+}
